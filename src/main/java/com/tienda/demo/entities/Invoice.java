@@ -18,8 +18,7 @@ public class Invoice {
     @Column(name = "invoice_date")
     private LocalDate invoice_date;
 
-    @Column(name="otra")
-    private String otra;
+
 
 
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = User.class)
@@ -28,11 +27,11 @@ public class Invoice {
     public Invoice(){
 
     }
-    public Invoice(double amount, LocalDate invoiceDate, User user, String otro ) {
+    public Invoice(double amount, LocalDate invoiceDate, User user ) {
         this.amount = amount;
         this.invoice_date = invoiceDate;
         this.user = user;
-        this.otra=otro;
+
     }
 
     public double getAmount() {

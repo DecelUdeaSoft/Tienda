@@ -32,7 +32,8 @@ public class FrontController {
     }
 
     @GetMapping("/invoices/new")
-    public String newInvoice(){
+    public String newInvoice(Model model){
+        model.addAttribute("invoice", new Invoice());
         return "new-invoice";
     }
 
