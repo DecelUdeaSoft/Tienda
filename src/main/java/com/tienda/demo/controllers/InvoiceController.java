@@ -19,10 +19,10 @@ public class InvoiceController {
     }
 
 
-    @GetMapping("/invoices")
+/*    @GetMapping("/invoices")
     public List<Invoice> invoice(){
         return this.service.getInvoice();
-    }
+    }*/
 
     @PostMapping("/invoices")
     public Invoice createInvoice(@RequestBody Invoice invoice){
