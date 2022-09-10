@@ -31,4 +31,9 @@ public class FrontController {
         return "invoices";
     }
 
+    @GetMapping("/invoices/new")
+    public String newInvoice(){
+        return "new-invoice";
+    }
+
 }
